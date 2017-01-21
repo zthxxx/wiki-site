@@ -57,7 +57,7 @@ marked:
   smartypants: true
   
 # Category & Tag
-default_category: _root
+default_category: root
 category_map:
 tag_map:
 
