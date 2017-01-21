@@ -1,0 +1,23 @@
+language: node_js # 指定语言环境
+node_js:
+  - "6" # 指定 NodeJS 版本
+dist: trusty # 指定系统版本。trusty 是指 Ubuntu 14.04 发行版的名称
+sudo: required # 是否需要 sudo 权限
+
+branches: # 指定要构建的分支
+  only: # only 表示只构建以下分支
+  - writing 
+
+install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
+  - source travis_env_init.sh # 指定 shell 脚本文件来做初始化
+
+script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
+  - hexo clean 
+  - hexo generate # Hexo 常规命令，执行清理和生成
+  - gulp
+  
+after_success: # 在构建成功后要运行的命令，构建失败不会执行，其他同上
+  - hexo deploy > /dev/null # 通过 hexo 的 deploy 命令部署博客
+
+notifications: # 设置通知项
+  email: true
