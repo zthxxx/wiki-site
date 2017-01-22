@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://wiki.zthxxx.top
 root: /
-permalink: posts/:category/:title/
+permalink: posts/:title/
 permalink_defaults:
 
 # Directory
@@ -30,7 +30,7 @@ skip_render:
   - '_posts/**/embed_page/**'
 
 # Writing
-new_post_name: :year:month:day-:title.md # File name of new posts
+new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: false # Open external links in new tab
