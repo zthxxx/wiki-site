@@ -11,17 +11,17 @@ tags: [Git]
 
 一般遵守 [**thoughtbot 规范**](https://github.com/thoughtbot/dotfiles/blob/master/gitmessage)，这里有他们的详细说明 [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message)。
 
-> ```bash
-> # 50-character subject line
-> #
-> # 72-character wrapped longer description. This should answer:
-> #
-> # * Why was this change necessary?
-> # * How does it address the problem?
-> # * Are there any side effects?
-> #
-> # Include a link to the ticket, if any.
-> ```
+```bash
+50-character subject line
+
+72-character wrapped longer description. This should answer:
+
+* Why was this change necessary?
+* How does it address the problem?
+* Are there any side effects?
+
+Include a link to the ticket, if any.
+```
 
 
 
@@ -40,14 +40,14 @@ tags: [Git]
 
 Example:
 
-> ```bash
-> fix($compile): couple of unit tests for IE9
->  
-> 1. Older IEs serialize html uppercased, but IE9 does not...
-> 2. Would be better to expect case insensitive, unfortunately jasmine does
-> 3. not allow to user regexps for throw expectations
->  
-> Closes #392
-> Breaks foo.bar api, foo.baz should be used instead
-> ```
+```bash
+fix($compile): couple of unit tests for IE9
+ 
+1. Older IEs serialize html uppercased, but IE9 does not...
+2. Would be better to expect case insensitive, unfortunately jasmine does
+3. not allow to user regexps for throw expectations
+ 
+Closes #392
+Breaks foo.bar api, foo.baz should be used instead
+```
 
