@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://wiki.zthxxx.top
 root: /
-permalink: posts/:title/
+permalink: wiki/:title/
 permalink_defaults:
 
 # Directory
