@@ -43,7 +43,7 @@ gulp.task('testImagemin', function () {
 
 上段代码出处：[gulp教程之gulp-imagemin | 一点](http://www.ydcss.com/archives/26)
 
-且不说 `progressive: true` 的意思应该是“转为[渐进式](/posts/计算机基础知识/图形图像/渐进式-JPEG-格式/)图片”，这段代码在 gulp-imagemin v3.0.0 之后就不正确了，主要体现在 `imagemin(option)` 的参数设置。
+且不说 `progressive: true` 的意思应该是“转为[渐进式](/wiki/计算机基础知识/图形图像/渐进式-JPEG-格式/)图片”，这段代码在 gulp-imagemin v3.0.0 之后就不正确了，主要体现在 `imagemin(option)` 的参数设置。
 
 目前网上没有找到几个 3.0.0 之后版本的示例代码，于是我自己去查看[官方 API 说明](https://github.com/sindresorhus/gulp-imagemin/blob/master/readme.md)，这里摘抄一段如下：
 
