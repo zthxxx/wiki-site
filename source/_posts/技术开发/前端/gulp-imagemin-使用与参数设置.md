@@ -116,5 +116,5 @@ gulp.task('minify-imgs', function () {
 > - [gulp教程之gulp-imagemin](http://www.ydcss.com/archives/26)
 > - [gulp-imagemin图片压缩----gulp系列](http://www.tuicool.com/articles/MVNfUbF)
 > - [gulp-imagemin | npmjs](https://www.npmjs.com/package/gulp-imagemin/)
-> - [sindresorhus/gulp-imagemin | GitHub](sindresorhus/gulp-imagemin)
-> - [imagemin/imagemin-jpegtran | GitHub](imagemin/imagemin-jpegtran | GitHub)
+> - [sindresorhus/gulp-imagemin | GitHub](https://github.com/sindresorhus/gulp-imagemin)
+> - [imagemin/imagemin-jpegtran | GitHub](https://github.com/imagemin/imagemin-jpegtran)
