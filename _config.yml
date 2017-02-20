@@ -97,15 +97,6 @@ jsonContent:
     text: true
     tags: true
     categories: true
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    keywords: false
   posts:
     title: true
     date: true
@@ -113,16 +104,6 @@ jsonContent:
     text: true
     tags: true
     categories: true
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: false
-    link: false
-    permalink: false
-    excerpt: false
-    keywords: false
-
   ignore:
     - 404.html
   
