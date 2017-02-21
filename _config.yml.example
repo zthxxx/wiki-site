@@ -26,6 +26,7 @@ customize:
     category_perExpand: false # enable article categories list per expanding
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: /favicon.ico # path to favicon
+    default_index_file: index.md # if this, it will display at site index instead of default index page
     social_links:
         github: https://github.com/zthxxx/zthxxx.github.io
         stack-overflow: http://stackoverflow.com/users/7277090/zthxxx?tab=profile
@@ -34,9 +35,14 @@ customize:
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
-widgets:
+widgets: # default use category only
     - category
-
+    # - recent_posts
+    # - archive
+    # - tag
+    # - tagcloud
+    # - links
+    
 # Excerpt 
 ## Auto creat excerpt with not <!--more-->
 ## Enable will truncate auto_excerpt.lines rows in post head to replace excerpt.
@@ -49,6 +55,14 @@ search:
     insight: true # you need to install `hexo-generator-json-content` before using Insight Search
     swiftype: # enter swiftype install key here
     baidu: false # you need to disable other search engines to use Baidu search, options: true, false
+
+# History version 
+history_control: # make you wiki has history version control in page
+    enable: true
+    server_link: https://github.com # recommend use GitHub https://github.com
+    user: zthxxx
+    repertory: Wiki-site
+    branch: writing
 
 # Comment
 comment:

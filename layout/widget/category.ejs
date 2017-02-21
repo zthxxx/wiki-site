@@ -1,6 +1,13 @@
 <% if (site.categories.length) { %>
     <div class="widget-wrap" id='categories'>
-        <h3 class="widget-title"><span><%= __('widget.categories') %></span></h3>
+        <h3 class="widget-title">
+            <span><%= __('widget.categories') %></span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-<%- theme.customize.category_perExpand ? 'up' : 'down' %> fa-2x"></i>
+            </a>
+        </h3>
+        
         <% 
             function listCategories(categories, posts) {
                 function layArtilces(posts) {
@@ -90,30 +97,66 @@
     </div>
     <script>
         $(document).ready(function() {
-            var iconFolderOpenClass  = 'fa fa-folder-open',
-            iconFolderCloseClass = 'fa fa-folder';
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
             // Handle directory-tree expansion:
-            $(document).on('click', '#sidebar a[data-role="directory"]', function (event) {
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
                 event.preventDefault();
 
                 var icon = $(this).children('.fa');
-                var open = icon.hasClass(iconFolderOpenClass);
-                var subtree = $(this).siblings('ul')[0];
-
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
                 icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
-
-                if (open) {
+                if (expanded) {
                     if (typeof subtree != 'undefined') {
-                        $(subtree).slideUp({ duration: 100 });
+                        subtree.slideUp({ duration: 100 });
                     }
                     icon.addClass(iconFolderCloseClass);
                 } else {
                     if (typeof subtree != 'undefined') {
-                        $(subtree).slideDown({ duration: 100 });
+                        subtree.slideDown({ duration: 100 });
                     }
                     icon.addClass(iconFolderOpenClass);
                 }
             });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+         
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
         });
     </script>
 <% } %>

@@ -1,16 +1,16 @@
 article
-    border-radius: 4px;
-    padding: 3px;
-    background-color: #C1CFDC;
+    padding: 3px
+    border-radius: 4px
+    background-color: color-border-stretch
 .article
     margin: block-margin 0
 
 .article-inner
     @extend $block
     overflow: hidden
-    background: white;
-    border-radius: 4px;
-    border: 1px solid #BBB;
+    background: white
+    border-radius: 4px
+    border: 1px solid #BBB
 
 .article-banner
     width:100%
@@ -38,6 +38,7 @@ article
 
 .article-meta
     @extend $block-caption
+    text-transform: none
     clearfix()
     line-height: 1.6em
     & > div
@@ -49,15 +50,28 @@ article
         color: color-default
         &:hover
             color: color-link
-
+div.article-meta-button
+    float: right
+    margin-right: 0
+    margin-left: 10px
+    a
+        padding: 4px 8px
+        margin: 2px 0
+        font-size: 85%
+        background: #555
+        border-radius: 3px
+        text-transform: none
+        &:hover
+            background: #333
+            
 .article-inner .article-meta
-        line-height: 20px;
-        background: #7B848C;
-        margin: 0px -21px 20px -21px;
+        line-height: 20px
+        background: color-meta-head
+        margin: 0px -21px 20px -21px
         padding: 0 20px;
-        line-height: 30px;
-        border: 1px solid #666;
-        border-radius: 4px 4px 0 0;
+        line-height: 30px
+        border: 1px solid #666
+        border-radius: 4px 4px 0 0
         color: #fff
         a
             color: #fff 
@@ -93,6 +107,9 @@ article
     ul, ol, dl
         margin-top: line-height
         margin-bottom: line-height
+        li.task-list
+            margin-left: 0
+            list-style: none
     img, video
         max-width: 100%
         height: auto
@@ -124,7 +141,7 @@ article
             left: 10px
             content: "\f10d"
             color: #e2e2e2
-            font-size: 32px;
+            font-size: 32px
             font-family: FontAwesome
             text-align: center
             position: absolute
