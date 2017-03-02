@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wiki.zthxxx.top
+url: http://wiki.zthxxx.me
 root: /
 permalink: wiki/:title/
 permalink_defaults:
@@ -115,9 +115,9 @@ sitemap:
 nofollow:
   enable: true
   exclude:
-    - zthxxx.top
-    - blog.zthxxx.top
-    - wiki.zthxxx.top
+    - zthxxx.me
+    - blog.zthxxx.me
+    - wiki.zthxxx.me
 
 ## Themes: https://hexo.io/themes/
 theme: Wikitten
