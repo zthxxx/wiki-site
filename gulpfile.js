@@ -46,7 +46,7 @@ function compressImgsFolder(imgFolder='.') {
     }
 }
 gulp.task('minify-imgs', compressImgsFolder('./public/images/'));
-gulp.task('minify-postImgs', compressImgsFolder('./public/posts/'));
+gulp.task('minify-postImgs', compressImgsFolder('./public/wiki/'));
 // 执行 gulp 命令时执行的任务
 gulp.task('default', [
     'minify-html', 'minify-css', 'minify-js',
