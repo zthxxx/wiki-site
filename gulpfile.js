@@ -38,8 +38,8 @@ function compressImgsFolder(imgFolder='.') {
             .pipe(imagemin([
                     imagemin.gifsicle({interlaced: true}),  // gif 转为交错格式
                     imagemin.jpegtran({progressive: true}), // jpeg 转为渐进式
-                    imagemin.optipng(), 
-                    imagemin.svgo()
+                    imagemin.optipng({optimizationLevel: 4}),
+                    imagemin.svgo({floatPrecision: 1}) // https://github.com/svg/svgo/issues/171
                 ], {verbose: false}
             ))
             .pipe(gulp.dest(imgFolder))
