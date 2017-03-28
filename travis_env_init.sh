@@ -19,12 +19,9 @@ npm --version
 echo "Hexo environment pre install start."
 echo "${__COMMENTS__}"
 
-npm install -g minimatch > /dev/null
-npm install -g graceful-fs > /dev/null
 npm install -g gulp > /dev/null
-npm install -g hexo > /dev/null
 npm install -g hexo-cli > /dev/null
-npm install > /dev/null
+npm install
 
 echo "hexo and packages install complete."
 

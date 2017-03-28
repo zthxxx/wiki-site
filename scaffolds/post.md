@@ -1,9 +1,8 @@
 ---
 title: {{ title }}
 date: {{ date }}
-toc: true
+toc: false
 tags: 
-categories: 
 ---
 
 
