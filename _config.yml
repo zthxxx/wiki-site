@@ -95,8 +95,6 @@ jsonContent:
     date: true
     path: true
     text: true
-    tags: true
-    categories: true
   posts:
     title: true
     date: true
