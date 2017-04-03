@@ -1,6 +1,5 @@
 ---
 title: Git commit message 基本规范
-categories: [技术开发,Git]
 date: 2017-01-23 04:14:54
 tags: [Git]
 ---

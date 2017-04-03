@@ -1,6 +1,5 @@
 ---
 title: Vim 粘贴模式
-categories: [技术开发, Linux, Vim]
 date: 2017-01-27 00:54:39
 tags: [Linux, Vim]
 ---

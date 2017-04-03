@@ -2,7 +2,6 @@
 title: DISC 行为风格理论
 toc: true
 tags: [生活学习, DISC]
-categories: [生活学习]
 date: 2017-02-16 12:56:24
 ---
 

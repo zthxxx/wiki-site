@@ -2,9 +2,6 @@
 title: Linux 命令控制屏幕
 date: 2017-01-22 03:13:34
 tags: [Linux]
-categories:
-  - 技术开发
-  - Linux
 ---
 
 ## 关闭屏幕

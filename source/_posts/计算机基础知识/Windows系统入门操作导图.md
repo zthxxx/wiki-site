@@ -1,6 +1,5 @@
 ---
 title: Windows 系统入门操作导图
-categories: [计算机基础知识]
 date: 2017-03-22 20:18:52
 ---
 

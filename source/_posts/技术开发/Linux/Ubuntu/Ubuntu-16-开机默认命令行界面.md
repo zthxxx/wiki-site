@@ -1,6 +1,5 @@
 ---
 title: Ubuntu 16.04 开机默认命令行界面
-categories: [技术开发,Linux,Ubuntu]
 date: 2017-01-23 03:43:10
 tags: [Ubuntu]
 ---

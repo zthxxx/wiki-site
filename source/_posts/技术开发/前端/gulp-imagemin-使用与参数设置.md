@@ -1,6 +1,5 @@
 ---
 title: gulp-imagemin 使用与参数设置
-categories: [技术开发, 前端]
 date: 2017-02-03 13:50:52
 tags: [Nodejs, gulp]
 ---
