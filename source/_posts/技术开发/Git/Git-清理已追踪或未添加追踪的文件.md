@@ -2,7 +2,7 @@
 title: Git 清理已追踪或未添加追踪的文件
 toc: false
 date: 2017-04-17 22:51:30
-tags:
+tags: [Git]
 ---
 
 
