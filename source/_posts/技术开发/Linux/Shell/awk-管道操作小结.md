@@ -21,7 +21,7 @@ plus.sh  data.txt
 
 其中， **`plus.sh`** 文件内容如下：
 
-```shell
+```bash
 #!/bin/sh
 IFS=" "
 read a b
@@ -112,7 +112,7 @@ $ awk -v RS="" '{print | "./plus.sh >> output.txt"; close("output.txt")}' data.t
 
 结果依然只有一个值。。。
 
-继续查阅资料才知道，`close` 中关闭的是**管道描述符**，而非只是文件名，而管道描述符是包含**对管道调用的整个命令在内的 shell 命令字符串**，也就是说，应该是 `close("./plus.sh >> output.txt")` 。
+继续查阅资料才知道，`close` 关闭时需要输入的是**管道描述符**，而非只是文件名，而管道描述符是包含**对管道调用的整个命令在内的 shell 命令字符串**，也就是说，应该是 `close("./plus.sh >> output.txt")` 。
 
 再次尝试代码修改如下：
 
@@ -133,13 +133,13 @@ OK，解决问题，这句代码就是能用的了。
 
 ## 总结
 
-总结下刚踩过的坑，在做些优化；
+总结下刚刚踩的坑，再做些优化；
 
 1. awk 中先关闭该管道才能打开另一个管道；
 
-2. `awk output | shell input` 时，awk 输出缓存到管道中，在 awk 程序结束时，或者管道关闭时，才把缓存中的所有输出交由 shell 处理；
+2. `awk output | shell input` 时，awk 输出缓存到管道中，只有 awk 程序结束时，或者管道关闭时，才把缓存中的所有输出交由 shell 处理；
 
-3. 管道描述符是，调用管道的整个 shell 命令字符串；(如在 `print | "./plus.sh >> output.txt";` 中就是 `"./plus.sh >> output.txt"`)
+3. 管道描述符是**调用管道的整个 shell 命令字符串**；（如在 `print | "./plus.sh >> output.txt";` 中就是 `"./plus.sh >> output.txt"`）
 
 4. awk 语句中使用 shell 变量
 
@@ -171,7 +171,7 @@ OK，解决问题，这句代码就是能用的了。
 
 **input_test.sh**
 
-```shell
+```bash
 #!/bin/sh
 cmd="${1:-"./main.sh"}"
 data="${2:-"test_data.txt"}"
