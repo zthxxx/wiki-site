@@ -177,7 +177,7 @@ cmd="${1:-"./main.sh"}"
 data="${2:-"test_data.txt"}"
 output="${3:-"stdout.txt"}"
 
-awk -v RS="" '{print $n | "\"'"${cmd}"'\" >> \"'"${output}"'\"";close("\"'"${main}"'\" >> \"'"${output}"'\"")}' ${data}
+awk -v RS="" '{print $n | "\"'"${cmd}"'\" >> \"'"${output}"'\"";close("\"'"${cmd}"'\" >> \"'"${output}"'\"")}' ${data}
 ```
 
 然后我们可以调用这个脚本，帮我们分割文本做输入输出。
