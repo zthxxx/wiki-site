@@ -49,7 +49,7 @@ Repositories 没有层级，一个 Repository 能被分配给多个 Team 并赋�
 
 一般来说，如果 Team 需要合作完成一项具体的项目，那么可以建一个管理敏捷开发的 Project；如果只是一般的日常任务需求，那么在任务仓库建立几个 Milestone 就够了。两者核心都是 Issues track。
 
-审核任务包括 Code Review 和审核 Issues 完成情况；Code Review 可以在完成一个 Issue 或 完成一项 Milestone 时进行；Issues 进度跟踪需要在日常进行，如果 Issue 是考核任务，那么在超时未 Close 后应认为考核失败。
+审核任务包括 [Code Review][1] 和审核 Issues 完成情况；Code Review 可以在完成一个 Issue 或 完成一项 Milestone 时进行；Issues 进度跟踪需要在日常进行，如果 Issue 是考核任务，那么在超时未 Close 后应认为考核失败。
 
 解决任务的表现形式就是 Close，Close Issues、Close Milestone、Close Project。
 
@@ -62,3 +62,5 @@ Repositories 没有层级，一个 Repository 能被分配给多个 Team 并赋�
 ## 参考资料
 > - [**GitHub** Help](https://help.github.com/)
 > - [ZenHub | Agile project management within GitHub](https://www.zenhub.com/)
+
+[1]: https://help.github.com/articles/about-pull-request-reviews/
