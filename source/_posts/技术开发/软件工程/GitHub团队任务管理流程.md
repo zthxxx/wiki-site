@@ -37,19 +37,21 @@ GitHub 本身是非常推崇和支持团队合作，也有一些帮助项目管�
 
 GitHub 提供的诸多特性都是应对管理模式的，各项概念中，Issues 提出问题与讨论；Milestone 里程碑，用于将 Issues 划分阶段进行追踪管理；Project 规划和管理项目；Organization 组织，下属成员可分为多个 Team，Team 可多层细分，并有不同的权限；对项目开发来说，能建立 Repositories 放置文件代码，人员相互之间形成 collaborator 合作者；以上这些特性完全能胜任我们需求的管理模式。
 
-对应以上需求，实验室所有人员组成一个 Organization;
+对应以上需求，实验室所有人员组成一个 [Organization](https://help.github.com/articles/about-organizations/);
 
-按不同研究方向将 Organization 划分为多个 Team，每个 Team 中按照小组关系进一步建立二级、三级 Team。
+按不同研究方向将 Organization 划分为多个 [Team](https://help.github.com/articles/about-teams/)，每个 Team 中按照小组关系进一步[建立二级、三级 Team](https://help.github.com/articles/requesting-to-add-a-child-team/)。
 
-实验室需要做的项目按照敏捷管理的方式建立 Organization 的 Project，具体划分的不同模块建立多个 Repositories，Organization 的 Project 能跨不同的 Repositories 管理 Issues。
+实验室需要做的项目按照敏捷管理的方式建立 Organization 的 [Project](https://help.github.com/articles/tracking-the-progress-of-your-work-with-project-boards/)，具体划分的不同模块建立多个 Repositories，Organization 的 Project 能跨不同的 Repositories [管理 Issues](https://help.github.com/articles/adding-issues-and-pull-requests-to-a-project-board/)。
 
-Repositories 没有层级，一个 Repository 能被分配给多个 Team 并赋予不同的权限，但我们可以将一个 Repository 只分配给一个 Team，这样看作是 Team 拥有自己的 Repository。
+Repositories 没有层级，一个 Repository 能被分配给多个 Team 并[赋予不同的权限](https://help.github.com/articles/managing-team-access-to-an-organization-repository/)，但我们可以将一个 Repository 只分配给一个 Team，这样看作是 Team 拥有自己的 Repository。
 
-在 Team 的 Repository 中，通过建立 Milestone 来安排任务目标和截止时间，在 Milestone 中添加 Issues 用作安排具体的任务，Issue 中能建立 Task List，用来表示一个任务的完成步骤和要点；每个 Issue 能指派不同的人员或 Team；Milestone 中会显示所属 Issues 的完成进度，用作任务管理再合适不过了。
+在 Team 的 Repository 中，通过建立 [Milestone](https://help.github.com/articles/about-milestones/) 来安排任务目标和截止时间，在 Milestone 中[添加 Issues](https://help.github.com/articles/associating-milestones-with-issues-and-pull-requests/) 用作安排具体的任务，Issue 中能建立 [Task List](https://help.github.com/articles/about-task-lists/)，用来表示一个任务的完成步骤和要点；每个 Issue 能[指派不同的人员或 Team](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/)；Milestone 中会显示所属 [Issues 的完成进度](https://help.github.com/articles/viewing-your-milestone-s-progress/)，用作任务管理再合适不过了。
 
-一般来说，如果 Team 需要合作完成一项具体的项目，那么可以建一个管理敏捷开发的 Project；如果只是一般的日常任务需求，那么在任务仓库建立几个 Milestone 就够了。两者核心都是 Issues track。
+Issues 之间能互相[提及(关联)](https://help.github.com/articles/autolinked-references-and-urls/)这在相互沟通上很有帮助；整个 Issues 面板功能都可以被[关闭](https://help.github.com/articles/disabling-issues/)，但我们更常用的是针对一条 Issue 使用 [Locking conversations](https://help.github.com/articles/locking-conversations/) 功能锁住权限，这样就只有拥有仓库权限的人能在这条 Issue 下评论，通常用于防止 spam，在合作管理中也就防止了不相关的人来捣乱。
 
-审核任务包括 [Code Review][1] 和审核 Issues 完成情况；Code Review 可以在完成一个 Issue 或 完成一项 Milestone 时进行；Issues 进度跟踪需要在日常进行，如果 Issue 是考核任务，那么在超时未 Close 后应认为考核失败。
+一般来说，如果 Team 需要合作完成一项具体的项目，那么可以建一个管理敏捷开发的 Project；如果只是一般的日常任务需求，那么在任务仓库建立几个 Milestone 就够了。两者核心都是 [Issues track](https://help.github.com/articles/about-issues/)。
+
+审核任务包括 [Code Review][1] 和审核 Issues 完成情况；Code Review 可以在完成一个 Issue 或 完成一项 Milestone 时进行；Issues 进度跟踪需要在日常进行，如果 Issue 是考核任务，那么在超时未 [Close](https://help.github.com/articles/closing-issues-using-keywords/) 后应认为考核失败。
 
 解决任务的表现形式就是 Close，Close Issues、Close Milestone、Close Project。
 
