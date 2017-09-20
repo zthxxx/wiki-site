@@ -41,7 +41,7 @@ resolve: {
 
 `~` 视为模块解析是 webpack 做的事，不是 css-loader 做的事。
 
-各类非 js ( `import` `require` ) 下打包的静态资源相对路径加载都可以用 `~` 语法；
+各类非 js 直接引用（`import` `require`）静态资源，依赖相对路径加载问题，都可以用 `~` 语法完美解决；
 
 例如 css module 中： `@import "~@/style/theme"`
 
