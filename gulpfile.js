@@ -49,6 +49,6 @@ gulp.task('minify-imgs', compressImgsFolder('./public/images/'));
 gulp.task('minify-postImgs', compressImgsFolder('./public/wiki/'));
 // 执行 gulp 命令时执行的任务
 gulp.task('default', [
-    'minify-html', 'minify-css', 'minify-js',
+    'minify-html', 'clean-css', 'minify-js',
     'minify-imgs', 'minify-postImgs'
 ]);
