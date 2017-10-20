@@ -1,5 +1,5 @@
 {
-  "name": "zthxxx wiki",
+  "name": "zthxxx-wiki",
   "version": "1.0.1",
   "private": true,
   "hexo": {
@@ -9,7 +9,7 @@
     "build": "hexo clean && hexo g",
     "build-dev": "hexo clean && hexo g && gulp",
     "dev": "hexo s -g",
-    "publish-theme": "git subtree push --prefix=themes/Wikitten Wikitten master --squash"
+    "push-theme": "git subtree push --prefix=themes/Wikitten Wikitten master --squash"
   },
   "dependencies": {
     "gulp": "^3.9.1",
