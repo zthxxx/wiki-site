@@ -1,15 +1,15 @@
 const gulp = require('gulp');
 const path = require('path');
-const minifycss = require('gulp-minify-css');
+const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const htmlmin = require('gulp-htmlmin');
 const htmlclean = require('gulp-htmlclean');
 const imagemin = require('gulp-imagemin');
 
 // 压缩 public 目录 css
-gulp.task('minify-css', function() {
+gulp.task('clean-css', function() {
     return gulp.src('./public/**/*.css')
-        .pipe(minifycss())
+        .pipe(cleanCSS())
         .pipe(gulp.dest('./public'));
 });
 // 压缩 public 目录 html

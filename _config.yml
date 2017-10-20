@@ -117,10 +117,6 @@ nofollow:
     - blog.zthxxx.me
     - wiki.zthxxx.me
 
-### A hexo plugin that uses MathJax/KaTeX
-math:
-  engine: 'mathjax' # or 'katex'
-
 ## Themes: https://hexo.io/themes/
 theme: Wikitten
 

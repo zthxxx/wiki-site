@@ -1,38 +1,38 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.1",
+  "name": "zthxxx wiki",
+  "version": "1.0.1",
   "private": true,
   "hexo": {
-    "version": "3.2.2"
+    "version": "3.3.9"
   },
   "scripts": {
-    "build": "hexo clean;hexo g",
-    "build-dev": "hexo clean;hexo g;gulp",
-    "debug": "hexo s -g"
+    "build": "hexo clean && hexo g",
+    "build-dev": "hexo clean && hexo g && gulp",
+    "dev": "hexo s -g",
+    "publish-theme": "git subtree push --prefix=themes/Wikitten Wikitten master --squash"
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-htmlclean": "^2.7.6",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-htmlclean": "^2.7.15",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-imagemin": "^3.1.1",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-uglify": "^2.0.0",
-    "hexo": "^3.2.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-uglify": "^3.0.0",
+    "hexo": "^3.3.9",
     "hexo-autonofollow": "^1.0.1",
-    "hexo-deployer-git": "^0.2.0",
+    "hexo-deployer-git": "^0.3.1",
     "hexo-directory-category": "^1.0.3",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
-    "hexo-generator-feed": "^1.2.0",
-    "hexo-generator-index": "^0.2.0",
+    "hexo-generator-feed": "^1.2.2",
+    "hexo-generator-index": "^0.2.1",
     "hexo-generator-json-content": "^3.0.1",
-    "hexo-generator-sitemap": "^1.1.2",
+    "hexo-generator-sitemap": "^1.2.0",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-inject": "^1.0.0",
-    "hexo-math": "^3.0.2",
-    "hexo-renderer-ejs": "^0.2.0",
-    "hexo-renderer-marked": "^0.2.10",
-    "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-marked": "^0.3.0",
+    "hexo-renderer-stylus": "^0.3.3",
+    "hexo-server": "^0.2.2",
+    "minimatch": "^3.0.4"
   }
 }
