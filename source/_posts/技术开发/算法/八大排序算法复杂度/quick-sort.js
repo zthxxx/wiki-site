@@ -1,4 +1,5 @@
 /**
+ * 升序快排分段函数
  * @param {number[]} array
  * @param {number} start
  * @param {number} end
@@ -17,7 +18,7 @@ function partition (array, start, end) {
 }
 
 /**
- * quick sorting
+ * 升序递归快速排序
  * @param {number[]} array
  * @param {number} start
  * @param {number} end
@@ -34,6 +35,7 @@ function quickSort (array, start, end) {
 
 let arr = [8, 1, 3, 9, 2, 4, 1, 9, 8, 7, 10];
 
+console.log(arr);
 console.log(quickSort(arr, 0, arr.length-1));
 
 console.log('ok');
