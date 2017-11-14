@@ -9,7 +9,9 @@ const imagemin = require('gulp-imagemin');
 // 压缩 public 目录 css
 gulp.task('clean-css', function() {
     return gulp.src('./public/**/*.css')
-        .pipe(cleanCSS())
+        .pipe(cleanCSS({
+            rebase: false
+        }))
         .pipe(gulp.dest('./public'));
 });
 // 压缩 public 目录 html

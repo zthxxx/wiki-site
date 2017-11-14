@@ -6,9 +6,11 @@
     "version": "3.3.9"
   },
   "scripts": {
-    "build": "hexo clean && hexo g",
-    "build-dev": "hexo clean && hexo g && gulp",
-    "dev": "hexo clean && hexo s -g",
+    "build": "hexo clean && hexo g && gulp",
+    "build-dev": "hexo clean && hexo g",
+    "new": "hexo new draft",
+    "post": "hexo publish",
+    "dev": "hexo clean && hexo s -g --draft",
     "push-theme": "git subtree push --prefix=themes/Wikitten Wikitten master --squash"
   },
   "dependencies": {
