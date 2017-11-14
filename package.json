@@ -8,7 +8,7 @@
   "scripts": {
     "build": "hexo clean && hexo g",
     "build-dev": "hexo clean && hexo g && gulp",
-    "dev": "hexo s -g",
+    "dev": "hexo clean && hexo s -g",
     "push-theme": "git subtree push --prefix=themes/Wikitten Wikitten master --squash"
   },
   "dependencies": {
