@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /tags/
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+Disallow: /js/
+Disallow: /css/
+Disallow: /libs/
+Disallow: /fonts/
+Disallow: /content.json
+Disallow: /404.html
+Sitemap: http://wiki.zthxxx.me/sitemap.xml
